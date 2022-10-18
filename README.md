@@ -78,7 +78,7 @@ print("The standard deviation of arrival deom feeder is %.3f"%SD)
 
 
 # Results and Output : 
-```![Screenshot 2022-10-18 101144](https://user-images.githubusercontent.com/93434149/196337218-cc661b3a-54a0-4baa-a154-dfc2e647f2a4.jpg)
+![Screenshot 2022-10-18 101144](https://user-images.githubusercontent.com/93434149/196337218-cc661b3a-54a0-4baa-a154-dfc2e647f2a4.jpg)
 
 
-```
+
