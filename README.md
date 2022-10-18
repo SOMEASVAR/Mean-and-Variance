@@ -44,11 +44,41 @@ It shows the distance of a random variable from its mean. It is calcualted as
 
 
 # Experiment :
+![WhatsApp Image 2022-10-18 at 10 08 55 AM](https://user-images.githubusercontent.com/93434149/196336889-794f36fa-fdcc-4941-b918-9db6fcd56b5f.jpeg)
+
 
 
 # Program :
+```
+import numpy as np
+L=[int(i) for i in input().split()]
+N=len(L);M=max(L)
+X=list();f=list()
+for i in range(M+1):
+    c=0
+    for j in range(N):
+        if L[j]==i:
+            c=c+1
+    f.append(c)
+    X.append(i)
+sf=np.sum(f)
+p=list()
+for i in range(M+1):
+    p.append(f[i]/sf)
+mean=np.inner(X,p)
+EX2=np.inner(np.square(X),p)
+var=EX2-mean**2
+SD=np.sqrt(var)
+print("The mean arrival rate is %.3f"%mean)
+print("The variance of arrival from feeder is %.3f"%var)
+print("The standard deviation of arrival deom feeder is %.3f"%SD)
+```
 
 
 
 
 # Results and Output : 
+```![Screenshot 2022-10-18 101144](https://user-images.githubusercontent.com/93434149/196337218-cc661b3a-54a0-4baa-a154-dfc2e647f2a4.jpg)
+
+
+```
